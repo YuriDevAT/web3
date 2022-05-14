@@ -1,0 +1,72 @@
+@use 'reset';
+
+.l-main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.c-block {
+  width: 400px;
+  height: 250px;
+  border: 1px solid black;
+  border-radius: 25px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__form {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  &__field {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+  }
+
+  &__button {
+    height: 50px;
+    flex: 1;
+    text-align: center;
+  }
+}
+
+.c-block {
+  &__input {
+    flex: 1;
+  }
+  &__select,
+  &__input {
+    border: 1px solid black;
+  }
+
+  &__switch {
+    border: 1px solid black;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    margin: 0 auto;
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    background: white;
+    z-index: 1;
+  }
+}
+
+.sr-only {
+  visibility: hidden;
+}

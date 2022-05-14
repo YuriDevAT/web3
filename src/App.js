@@ -1,14 +1,11 @@
-import React, { Component } from 'react';
-import './style.scss';
+import React from 'react';
+import './styles/style.scss';
+import Swap from './components/Swap';
 
-class App extends Component {
-  render() {
-    return (
-      <div className='App'>
-        <h1> Hello, World! </h1>
-      </div>
-    );
-  }
+export default function App() {
+  return (
+    <div className='l-main' role='main'>
+      <Swap />
+    </div>
+  );
 }
-
-export default App;
